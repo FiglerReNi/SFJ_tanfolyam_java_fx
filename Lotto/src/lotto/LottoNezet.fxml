@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="label1" prefHeight="183.0" prefWidth="272.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="lotto.LottoNezetController">
+    <children>
+      <Button fx:id="button" layoutX="106.0" layoutY="144.0" onAction="#handleButtonAction" text="Sorsolás" />
+      <TextField id="input1" fx:id="input1" layoutX="34.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField id="input2" fx:id="input2" layoutX="76.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField id="input3" fx:id="input3" layoutX="208.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField id="input4" fx:id="input4" layoutX="119.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField id="input5" fx:id="input5" layoutX="163.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
+      <Text layoutX="57.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Írj be 5 számot 1 és 90 között" />
+      <Text layoutX="97.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOTTÓ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label id="label1" fx:id="label1" layoutX="36.0" layoutY="112.0" />
+      <Label id="label2" fx:id="label2" layoutX="78.0" layoutY="112.0" />
+      <Label id="label4" fx:id="label4" layoutX="165.0" layoutY="112.0" />
+      <Label id="label5" fx:id="label5" layoutX="210.0" layoutY="112.0" />
+      <Label id="label3" fx:id="label3" layoutX="122.0" layoutY="112.0" />
+    </children>
+</AnchorPane>
