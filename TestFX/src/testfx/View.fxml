@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--Ezen a fájlon dublán attintva fog előjönni a külön feltelepített sceneBuilder
+    Ha nem jön elő Tools->Options->Java fül
+    Ebből a fájlból olvassuk ki hogyan kell kinéznie az alkalmazásnak, itt definiáljuk a nézetet.
+    Itt is írhatom, de ha a grafikus felületen csinálom, ide beírja magától a dolgokat.-->
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testfx.ViewController">
+    <children>
+        <!--fx:id az elem azonosítója, bármi lehet.
+            Minden elem objektumna számít. -->
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#akcio" text="Click Me!" />
+        <Label fx:id="tag" alignment="CENTER" layoutX="126" layoutY="120" minHeight="16" minWidth="69" text="Kezdőérték" textAlignment="CENTER" wrapText="true" />
+      <CheckBox fx:id="cbox" layoutX="122.0" layoutY="44.0" mnemonicParsing="false" text="CheckBox" />
+    </children>
+</AnchorPane>
