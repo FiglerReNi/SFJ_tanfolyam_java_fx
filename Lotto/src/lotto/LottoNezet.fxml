@@ -7,16 +7,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="label1" prefHeight="183.0" prefWidth="272.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="lotto.LottoNezetController">
+<AnchorPane id="label1" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.LottoNezetController">
     <children>
-      <Button fx:id="button" layoutX="106.0" layoutY="144.0" onAction="#handleButtonAction" text="Sorsolás" />
-      <TextField id="input1" fx:id="input1" layoutX="34.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
-      <TextField id="input2" fx:id="input2" layoutX="76.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
-      <TextField id="input3" fx:id="input3" layoutX="208.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
-      <TextField id="input4" fx:id="input4" layoutX="119.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
-      <TextField id="input5" fx:id="input5" layoutX="163.0" layoutY="67.0" prefHeight="25.0" prefWidth="31.0" />
-      <Text layoutX="57.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Írj be 5 számot 1 és 90 között" />
-      <Text layoutX="97.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOTTÓ">
+      <Button fx:id="button" layoutX="170.0" layoutY="206.0" onAction="#handleButtonAction" text="Sorsolás" />
+      <HBox layoutX="103.0" layoutY="129.0" spacing="10.0">
+         <children>
+            <TextField id="input1" fx:id="input1" layoutX="98.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
+            <TextField id="input2" fx:id="input2" layoutX="140.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
+            <TextField id="input4" fx:id="input4" layoutX="183.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
+            <TextField id="input5" fx:id="input5" layoutX="227.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
+            <TextField id="input3" fx:id="input3" layoutX="272.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
+         </children>
+      </HBox>
+      <Text layoutX="121.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Írj be 5 számot 1 és 90 között" />
+      <Text layoutX="161.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOTTÓ">
          <font>
             <Font size="25.0" />
          </font>
