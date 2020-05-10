@@ -12,10 +12,14 @@
 
 <AnchorPane id="label1" prefHeight="268.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.LottoNezetController">
     <children>
-      <Pane id="basePane" fx:id="basePane" layoutY="-8.0" prefHeight="300.0" prefWidth="400.0">
+      <Pane id="basePane" fx:id="basePane" prefHeight="299.0" prefWidth="400.0">
          <children>
-            <Button fx:id="button" layoutX="170.0" layoutY="261.0" onAction="#handleButtonAction" text="Sorsolás" />
-            <HBox layoutX="103.0" layoutY="138.0" spacing="10.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aab9c6" height="322.0" layoutX="-14.0" layoutY="-12.0" stroke="BLACK" strokeType="INSIDE" width="427.0" />
+            <Button fx:id="button" layoutX="168.0" layoutY="257.0" onAction="#handleButtonAction" text="Sorsolás" textFill="#c31b1b">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <HBox layoutX="103.0" layoutY="118.0" spacing="10.0">
                <children>
                   <TextField id="input1" fx:id="input1" alignment="CENTER" layoutX="98.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
                   <TextField id="input2" fx:id="input2" alignment="CENTER" layoutX="140.0" layoutY="129.0" prefHeight="25.0" prefWidth="31.0" />
@@ -30,7 +34,7 @@
                   <Font size="25.0" />
                </font>
             </Text>
-            <HBox layoutX="103.0" layoutY="179.0" prefHeight="20.0" prefWidth="195.0" spacing="15.0">
+            <HBox layoutX="103.0" layoutY="190.0" prefHeight="20.0" prefWidth="195.0" spacing="15.0">
                <children>
                   <Label id="label1" fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="121.0" prefHeight="25.0" prefWidth="31.0" />
                   <Label id="label2" fx:id="label2" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="121.0" prefHeight="25.0" prefWidth="31.0" />
@@ -39,7 +43,15 @@
                   <Label id="label5" fx:id="label5" alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="121.0" prefHeight="25.0" prefWidth="31.0" />
                </children>
             </HBox>
-            <Label id="eredmeny" fx:id="eredmeny" layoutX="170.0" layoutY="227.0" prefHeight="17.0" prefWidth="60.0" />
+            <Label id="eredmeny" fx:id="eredmeny" alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="229.0" prefHeight="17.0" prefWidth="181.0" textFill="#d31815">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Text layoutX="144.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorsolt számok" textAlignment="CENTER" wrappingWidth="110.13671875">
+               <font>
+                  <Font name="Book Antiqua" size="14.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <Pane id="alertPane" fx:id="alertPane" prefHeight="300.0" prefWidth="400.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
