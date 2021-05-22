@@ -16,7 +16,7 @@ import javafx.scene.layout.Pane;
 
 public class LottoNezetController implements Initializable {
 
-//final változót nagy betűvel írjuk
+
 //<editor-fold defaultstate="collapsed" desc="Class Variables">
     private final int MAX = 90;
     private final int MIN = 1;
@@ -117,10 +117,6 @@ public class LottoNezetController implements Initializable {
 
         }
         //Ne lehessen 2x ugyanazt a számot megadni
-        /*Collectionok:
-            -List ->ArrayList
-            -Set -> HashSet: nem lehet benne kétszer ugyanazt a számot tárolni
-         */
         //A megoldás -> létrehozunk egy arrayList-et belepaoljuk a számokat, majd összehasonlítjuk
         //az elemeet, hogy van-e egyezés
 //        ArrayList<Integer> selectedNumbers = new ArrayList<Integer>();
@@ -177,7 +173,6 @@ public class LottoNezetController implements Initializable {
         resultCheck(userNumbers);
     }
 
-    /*Rekurzív függyvény - Olyan függvény ami saját magát hívja meg, a mi esetünkben egy feltételhez kötötten*/
     private int getRandomNumber() {
         //1-90 ig generál A módszer
         int random = (int) (Math.random() * MAX) + MIN;
